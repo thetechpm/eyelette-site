@@ -1,0 +1,63 @@
+{
+  "siteTitle": "Eyelette Made Stuff",
+  "backgroundImage": "/main/knight_backsplash-upsidedown.png",
+  "about": {
+    "title": "About",
+    "profileImage": "/main/eyelette-avatar.jpg",
+    "intro": "Hello! I'm Eyelette, aka a painfully shy girl trying to make visual novels.",
+    "list": [
+      "she/her 🏳️‍🌈",
+      "all human-made stuff (RIP you beautiful em dashes)"
+    ]
+  },
+ "games": {
+    "title": "Games",
+    "items": [
+      {
+        "id": 1,
+        "title": "Wicked Aspect",
+        "image": "/gallery/wicked-aspect.png",
+        "link": "https://eyelette.itch.io/wickedaspect",
+        "description": "Cursed knight dollmarker. Build your very own cursed knight!"
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Art",
+    "items": [
+      {
+        "id": 1,
+        "title": "Bad Thoughts",
+        "image": "/gallery/bad-thoughts.jpg",
+        "description": "HANDS ON THE HEAD HANDS ON THE BELT HANDS ON THE FRAME HANDS O—"
+      },
+      {
+        "id": 2,
+        "title": "Ghost Hats",
+        "image": "/gallery/ghost-hats.jpg",
+        "description": "Just a girl and some ghosts. The ghosts have hats."
+      },
+      {
+        "id": 3,
+        "title": "Cursed Knight",
+        "image": "/gallery/cursed-knight.jpg",
+        "description": "Is he cursed? Nah. Definitely not."
+      }
+    ]
+  },
+  "socialLinks": [
+    {
+      "platform": "@eyelette.bsky.social",
+      "url": "https://bsky.app/profile/eyelette.bsky.social",
+      "icon": "fa-brands fa-bluesky"
+    },
+    {
+      "platform": "Eyelette - Itch.io",
+      "url": "https://eyelette.itch.io/",
+      "icon": "fa-brands fa-itch-io"
+    }
+  ],
+  "footer": {
+    "copyrightName": "Eyelette"
+  }
+}
