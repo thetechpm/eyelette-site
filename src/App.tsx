@@ -148,7 +148,7 @@ function App() {
           <Container className="game-section mt-3">
             <h2>{content.games.title}</h2>
 
-            <Row xs={1} md={2} className="g-4">
+            <Row xs={1} md={3} className="g-4">
               {content.games.items.map((item) => (
                 <Col key={item.id}>
                   <a href={item.link}>
@@ -171,7 +171,7 @@ function App() {
           <Container className="portfolio-section mt-3">
             <h2>{content.portfolio.title}</h2>
 
-            <Row xs={1} md={4} className="g-4">
+            <Row xs={1} md={2} className="g-4">
               {content.portfolio.items.map((item) => (
                 <Col key={item.id}>
                   <Card className="portfolio-card h-100">
