@@ -3,8 +3,8 @@
   "backgroundImage": "/main/knight_backsplash-upsidedown.png",
   "about": {
     "title": "About",
-    "profileImage": "/main/eyelette-avatar.jpg",
-    "intro": "Hello! I'm Eyelette, aka a painfully shy girl trying to make visual novels.",
+    "profileImage": "/main/profile-2.png",
+    "intro": "Hi, I'm Lett. I try to crack jokes and make visual novels. The word 'try' does a lotta heavy lifting.",
     "list": [
       "she/her 🏳️‍🌈",
       "all human-made stuff (RIP you beautiful em dashes)"
@@ -29,18 +29,26 @@
         "id": 1,
         "title": "Bad Thoughts",
         "image": "/gallery/bad-thoughts.jpg",
-        "description": "HANDS ON THE HEAD HANDS ON THE BELT HANDS ON THE FRAME HANDS O—"
+        "description": "HANDS ON THE HEAD HANDS ON THE BELT HANDS ON THE FRAME HANDS O—",
+        "link" : "https://bsky.app/profile/eyelette.bsky.social/post/3me4zy2f3x22v"
+      },
+      {
+        "id": 2,
+        "title": "Houppelande",
+        "image": "/gallery/quest-for-camelot.jpg",
+        "description": "This morning I didn't know what a houppelande was. Drawing it was glorious.",
+        "link" : "https://bsky.app/profile/eyelette.bsky.social/post/3mg2nch7t3k2f"
       }
     ]
   },
   "socialLinks": [
     {
-      "platform": "@eyelette.bsky.social",
+      "platform": "Bluesky - @eyelette.bsky.social",
       "url": "https://bsky.app/profile/eyelette.bsky.social",
       "icon": "fa-brands fa-bluesky"
     },
     {
-      "platform": "Eyelette - Itch.io",
+      "platform": "Itch.io - Eyelette",
       "url": "https://eyelette.itch.io/",
       "icon": "fa-brands fa-itch-io"
     }

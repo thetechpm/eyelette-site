@@ -15,6 +15,7 @@ interface PortfolioItem {
   title: string;
   image: string;
   description: string;
+  link: string;
 }
 
 interface GameItem {
@@ -80,7 +81,7 @@ function App() {
   const currentYear = new Date().getFullYear();
 
 
-  /* This shows a loading spinner if the content is still being loaded */
+  // This shows a loading spinner if the content is still being loaded
   if (loading) {
     return (
       <Container className="loading-container">
@@ -90,6 +91,7 @@ function App() {
     );
   }
 
+  // Show an error thing if the content didn't fetch properly
   if (!content) {
     return (
       <Container className="error-container">
@@ -103,8 +105,13 @@ function App() {
   
   return (
     <div>
-      {/* This is where your background image is added */}
-       <Container className="header-background-image" style={{ backgroundImage: `url(${content.backgroundImage})` }}>
+      {/* This is where your banner image is added */}
+      <Container fluid className="header-background-image mb-o">
+        <img
+          src={content.backgroundImage}
+          alt="Banner"
+          className="header-img"
+        />
         <header>
           <Col xs={12}>
             <Container className='header-body-container'>
@@ -114,19 +121,21 @@ function App() {
         </header>
       </Container>
       {/* This is the main content panel */}
-      <Container className="app-container">
-        <Container fluid className= "my-3">
+      <Container className="app-container mt-0">
+        <Container fluid className= "mb-3">
 
           {/* This is the about section.*/}
           <Container>
             <h2>{content.about.title}</h2>
             <Row>
               <Col md={4} className="text-center mb-4 mb-md-0">
-                <img 
-                  src={content.about.profileImage} 
-                  alt="Profile" 
-                  className="profile-image img-fluid mx-auto"
-                />
+                <div className="profile-container mx-auto">
+                  <img 
+                    src={content.about.profileImage} 
+                    alt="Profile" 
+                    className="profile-image"
+                  />
+                </div>
               </Col>
               <Col md={8}>
                 <Container className="about-text">
@@ -139,6 +148,27 @@ function App() {
                       ))}
                     </ul>
                   </Row>
+                  <br></br>
+                  <Row className="about-text">
+                    <h3>Find me on: </h3>
+                  </Row>
+                  <Row className= "mx-3">
+                    { /* This is where your social accounts are iterated over and shown as bullets. */ }
+                    <ul>
+                      {content.socialLinks.map((social, index) => (
+                        <li><a 
+                          key={index}
+                          className="text-decoration-none about-social-links"
+                          href={social.url} 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          aria-label={social.platform}
+                        >
+                          <p><i className={social.icon}></i> {social.platform}</p>
+                        </a></li>
+                      ))}
+                  </ul>
+                </Row>
                 </Container>
               </Col>
             </Row>
@@ -167,22 +197,24 @@ function App() {
             </Row>
           </Container>
 
-          {/* This is the image grid for the portfolio section. */}
+          {/* This is the image grid for the art portfolio section. */}
           <Container className="portfolio-section mt-3">
             <h2>{content.portfolio.title}</h2>
 
             <Row xs={1} md={2} className="g-4">
               {content.portfolio.items.map((item) => (
                 <Col key={item.id}>
-                  <Card className="portfolio-card h-100">
-                    <Card.Img variant="top" src={item.image} alt={item.title}  />
-                    <Card.ImgOverlay className="portfolio-card-overlay">
-                      <Card.Title>{item.title}</Card.Title>
-                      <Card.Text>
-                        {item.description}
-                      </Card.Text>
-                    </Card.ImgOverlay>
-                  </Card>
+                  <a href={item.link}>
+                    <Card className="portfolio-card h-100">
+                      <Card.Img variant="top" src={item.image} alt={item.title}  />
+                      <Card.ImgOverlay className="portfolio-card-overlay">
+                        <Card.Title>{item.title}</Card.Title>
+                        <Card.Text>
+                          {item.description}
+                        </Card.Text>
+                      </Card.ImgOverlay>
+                    </Card>
+                  </a>
                 </Col>
               ))}
             </Row>

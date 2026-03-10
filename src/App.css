@@ -40,17 +40,33 @@ html, body, #root {
 .header-background-image {
   position: relative;
   z-index: 1;
-  min-width: 100%;
-  background-size: cover;
-  background-position: center;
+  width: 100vw;
+  min-width: 100vw;
+  padding: 0; 
   display: flex;
   align-items: center;
   justify-content: center;
   color: #EDDBC5;
+  overflow: hidden;
+  margin-bottom: 0px;
+}
+
+.header-background-image .header-img {
+  width: 100%;
+  min-width: 100%;
+  max-width: none;
+  min-height: 20vh;
+  height: auto;
+  display: block;
+  margin-bottom: 0px;
 }
 
 .header-background-image header {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  z-index: 3;
 }
 
 .header-body-container {
@@ -70,6 +86,7 @@ h1 {
   font-weight: 400;
   font-style: normal;
   font-size: 4em;
+  z-index: 10;
   text-shadow: 
     -2px -2px 0 #c0593a,
     2px -2px 0 #c0593a,
@@ -79,6 +96,7 @@ h1 {
     1px -1px 0 #c0593a,
     -1px 1px 0 #c0593a,
     1px 1px 0 #c0593a;
+ 
 }
 
 h2 {
@@ -93,13 +111,19 @@ h2 {
 }
 
 /* About Section */
-.profile-image {
-  width: 25vh;
-  height: 25vh;
-  max-height: 400px;
-  min-height: 150px;
-  border-radius: 50%;
+.profile-container {
+  position: relative;
+  height: 0;
+  padding-bottom: 100%;
+}
+
+.profile-container .profile-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
   object-fit: cover;
+  border-radius: 50%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -107,7 +131,17 @@ h2 {
   margin-bottom: 20px;
   line-height: 1.8;
   color: #555;
-  font-size: 16px;
+  font-size: 20px;
+}
+
+.about-social-links p {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #c0593a;
+  margin: 0;
+}
+
+.about-social-links p:hover {
+  color: #EDDBC5;
 }
 
 /* Game Portfolio Section */
@@ -256,16 +290,22 @@ h2 {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+
   .main-panel {
     width: 95%;
     height: 90vh;
   }
 
   .header-background-image {
-    min-height: 160px;
+    padding: 0 !important;
+    margin: 0 !important;
     height: auto;
-    padding: 30px 12px;
+    margin: 0;
     background-position: center top;
+  }
+
+  .header-background-image .header-img {
+    margin: 0 !important;
   }
 
   .header-body-container {
@@ -283,7 +323,8 @@ h2 {
 
   h1 {
     font-size: 2.2em;
-    padding: 6vh 4vw 0 4vw;
+    padding-top: 0;
+    margin-top: 2vh;
   }
 
   h2 {
@@ -294,10 +335,10 @@ h2 {
     font-size: 1.2em;
   }
 
-  .profile-image {
+  .profile-container {
     width: 120px;
     height: 120px;
-    margin-bottom: 12px;
+    padding-bottom: 0;
   }
 
   .game-card .card-img-top {
