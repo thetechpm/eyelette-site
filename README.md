@@ -1,6 +1,6 @@
 # Eyelette Made Stuff
 
-A portfolio web application built with React (Javascript library for building single page apps, pretty industry standard), Vite (local development tool), and React Bootstrap (open-source UI framework).
+A portfolio web application built with HTML, Javascript, Font Awesome (for icons), and Bootstrap (open-source UI framework).
 Made lovingly by Jenny.
 
 ## Editing most content
@@ -11,7 +11,7 @@ Including:
 - Most Images (main page, about, and gallery)
 - Links to your socials
 
-The only other code files that really matter are App.tsx and App.css. App.tsx is where the layout and content is added. App.css is the stylesheet for formatting. The little hover effects are there.
+The only other code files that really matter are app.js and app.css. App.js is where the layout and content is added. App.css is the stylesheet for formatting. For instance, the little hover effects are there.
 
 If you want to change the small website icon that shows up on the tab, it's controlled by the favicon files in public/main. If you want to adjust the tab label, you will need to adjust the "title" in the index.html file. 
 

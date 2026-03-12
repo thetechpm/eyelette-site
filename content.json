@@ -1,0 +1,59 @@
+{
+  "siteTitle": "Eyelette Made Stuff",
+  "backgroundImage": "/main/knight_backsplash-upsidedown.png",
+  "about": {
+    "title": "About",
+    "profileImage": "/main/profile-2.png",
+    "intro": "Hi, I'm Lett. I try to crack jokes and make visual novels. The word 'try' does a lotta heavy lifting.",
+    "list": [
+      "she/her 🏳️‍🌈",
+      "all human-made stuff (RIP you beautiful em dashes)"
+    ]
+  },
+ "games": {
+    "title": "Games",
+    "items": [
+      {
+        "id": 1,
+        "title": "Wicked Aspect",
+        "image": "/gallery/wicked-aspect.png",
+        "link": "https://eyelette.itch.io/wickedaspect",
+        "description": "Cursed knight dollmarker. Build your very own cursed knight!"
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Art",
+    "items": [
+      {
+        "id": 1,
+        "title": "Bad Thoughts",
+        "image": "/gallery/bad-thoughts.jpg",
+        "description": "HANDS ON THE HEAD HANDS ON THE BELT HANDS ON THE FRAME HANDS O—",
+        "link" : "https://bsky.app/profile/eyelette.bsky.social/post/3me4zy2f3x22v"
+      },
+      {
+        "id": 2,
+        "title": "Houppelande",
+        "image": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:tacpd3qt5ghe6pj4t3tpwfv2/bafkreidezqjfwc7etbfppdoaj7cq5qgkrpywbhzj6ub4dto2am3y6inmai",
+        "description": "This morning I didn't know what a houppelande was. Drawing it was glorious.",
+        "link" : "https://bsky.app/profile/eyelette.bsky.social/post/3mg2nch7t3k2f"
+      }
+    ]
+  },
+  "socialLinks": [
+    {
+      "platform": "Bluesky - @eyelette.bsky.social",
+      "url": "https://bsky.app/profile/eyelette.bsky.social",
+      "icon": "fa-brands fa-bluesky"
+    },
+    {
+      "platform": "Itch.io - Eyelette",
+      "url": "https://eyelette.itch.io/",
+      "icon": "fa-brands fa-itch-io"
+    }
+  ],
+  "footer": {
+    "copyrightName": "Eyelette"
+  }
+}
