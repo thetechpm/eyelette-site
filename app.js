@@ -57,13 +57,13 @@ function renderSite(content) {
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
+                            <a class="nav-link" href="#about"><i class="fa-solid fa-question"></i> About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#games">Games</a>
+                            <a class="nav-link" href="#games"><i class="fa-solid fa-gamepad"></i>Games</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#art">Art</a>
+                            <a class="nav-link" href="#art"><i class="fa-solid fa-paint-brush"></i>Art</a>
                         </li>
                     </ul>
                 </div>
