@@ -57,13 +57,13 @@ function renderSite(content) {
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
+                            <a class="nav-link" href="#${content.about.title}">${content.about.title}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#games">Games</a>
+                            <a class="nav-link" href="#${content.games.title}">${content.games.title}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#art">Art</a>
+                            <a class="nav-link" href="#${content.portfolio.title}">${content.portfolio.title}</a>
                         </li>
                     </ul>
                 </div>
@@ -80,7 +80,7 @@ function renderSite(content) {
     const aboutSection = document.createElement('div');
     aboutSection.className = 'container about-section';
     aboutSection.innerHTML = `
-        <h2 id="about">${content.about.title}</h2>
+        <h2 id="${content.about.title}">${content.about.title}</h2>
         <div class="row">
         <div class="col-md-4 text-center mb-4 mb-md-0">
             <div class="profile-container mx-auto">
@@ -116,7 +116,7 @@ function renderSite(content) {
     const gamesSection = document.createElement('div');
     gamesSection.className = 'container game-section mt-3';
     gamesSection.innerHTML = `
-        <h2 id="games">${content.games.title}</h2>
+        <h2 id="${content.games.title}">${content.games.title}</h2>
         <div class="row row-cols-1 row-cols-md-3 g-4">
         ${content.games.items.map(item => `
             <div class="col">
@@ -138,7 +138,7 @@ function renderSite(content) {
     const portfolioSection = document.createElement('div');
     portfolioSection.className = 'container portfolio-section mt-3';
     portfolioSection.innerHTML = `
-        <h2 id="art">${content.portfolio.title}</h2>
+        <h2 id="${content.portfolio.title}">${content.portfolio.title}</h2>
         <div class="row row-cols-1 row-cols-md-2 g-4">
         ${content.portfolio.items.map(item => `
             <div class="col">
